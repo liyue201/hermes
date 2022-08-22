@@ -446,12 +446,6 @@ func (dt *Default) HTMLTemplate() string {
                         {{ end }}
                       {{ end }}
 
-                    <p>
-                      {{.Email.Body.Signature}},
-                      <br />
-                      {{.Hermes.Product.Name}}
-                    </p>
-
                     {{ if (eq .Email.Body.FreeMarkdown "") }}
                       {{ with .Email.Body.Actions }} 
                         <table class="body-sub">
