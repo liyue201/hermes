@@ -277,19 +277,6 @@ func (dt *Default) HTMLTemplate() string {
   <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
     <tr>
       <td class="content">
-        <table class="email-content" width="100%" cellpadding="0" cellspacing="0">
-          <!-- Logo -->
-          <tr>
-            <td class="email-masthead">
-              <a class="email-masthead_name" href="{{.Hermes.Product.Link}}" target="_blank">
-                {{ if .Hermes.Product.Logo }}
-                  <img src="{{.Hermes.Product.Logo | url }}" class="email-logo" />
-                {{ else }}
-                  {{ .Hermes.Product.Name }}
-                {{ end }}
-                </a>
-            </td>
-          </tr>
 
           <!-- Email Body -->
           <tr>
